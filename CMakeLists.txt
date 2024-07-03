@@ -14,7 +14,8 @@ list(APPEND CMAKE_MODULE_PATH "/usr/local/share/cmake/Modules")
 find_package(Python COMPONENTS Interpreter Development)
 find_package(fmt REQUIRED)
 find_package(LibHttpServer MODULE REQUIRED)
-find_package(pybind11 REQUIRED)
+# find_package(pybind11 REQUIRED)
+find_package(pybind11 CONFIG REQUIRED)
 
 include(CTest)
 
